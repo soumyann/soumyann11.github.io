@@ -1,9 +1,10 @@
 "use strict";
-((function(){
-    // check if user is logged in
+(function()
+{
+    // if user does not exist in session storage
     if(!sessionStorage.getItem("user"))
     {
-        // if not...redirect them back to the login page
+        // redirect to the login page
         location.href = "login.html";
     }
-}))();
+})();
